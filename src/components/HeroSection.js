@@ -27,10 +27,10 @@ const HeroSection = () => {
             alt="Avatar"
           />
         </div>
-        <h1 className="text-5xl font-bold mb-4 text-secondary drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-secondary drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           TRUNG VU VAN
         </h1>
-        <h2 className="text-4xl font-bold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+        <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
           I{"'"}m {""}
           <ReactTyped
             strings={["Web Developer", "Freelancer", "UI/UX Designer"]}

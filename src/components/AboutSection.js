@@ -105,7 +105,7 @@ const AboutSection = () => {
                 <p className="">
                   <span className="font-medium text-lg">Website: </span>
                   <span className="text-lg tracking-wider text-gray-500">
-                  portfolio-sigma-murex-94.vercel.app
+                    portfolio-sigma-murex-94.vercel.app
                   </span>
                 </p>
                 <p className="">
@@ -144,20 +144,24 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          <motion.div className="pt-4 flex gap-4 md:gap-10" variants={fadeInUp}>
+          <motion.div
+            className="pt-4 flex flex-col md:flex-row gap-4 md:gap-10 w-full"
+            variants={fadeInUp}
+          >
             <motion.a
               href={Image.CV}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="w-24 md:w-auto flex justify-center md:px-8 py-4 bg-primary rounded-full text-white shadow-black shadow-sm transition-colors duration-300 hover:bg-white hover:text-primary font-medium hover:shadow-primary"
+              className="w-full md:w-auto flex justify-center px-6 py-3 md:px-8 md:py-4 bg-primary rounded-full text-white shadow-black shadow-sm transition-colors duration-300 hover:bg-white hover:text-primary font-medium hover:shadow-primary"
             >
               Download CV
             </motion.a>
+
             <motion.button
               onClick={handleSmoothScroll}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white rounded-full text-primary font-semibold shadow-primary shadow-sm transition-colors duration-300 hover:opacity-80 hover:bg-primary hover:text-white hover:shadow-black"
+              className="w-full md:w-auto flex justify-center px-6 py-3 md:px-8 md:py-4 bg-white rounded-full text-primary font-semibold shadow-primary shadow-sm transition-colors duration-300 hover:opacity-80 hover:bg-primary hover:text-white hover:shadow-black"
             >
               Hire Me
             </motion.button>

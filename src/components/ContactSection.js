@@ -94,7 +94,7 @@ const ContactSection = () => {
           </p>
           <p className="text-lg font-medium text-gray-500">
             <span className="font-medium text-black">Facebook:</span>{" "}
-            https://www.facebook.com/trungvu.172002/
+            facebook.com/trungvu.172002
           </p>
         </div>
 

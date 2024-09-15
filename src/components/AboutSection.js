@@ -144,12 +144,12 @@ const AboutSection = () => {
             </div>
           </motion.div>
 
-          <motion.div className="pt-4 flex gap-10" variants={fadeInUp}>
+          <motion.div className="pt-4 flex gap-4 md:gap-10" variants={fadeInUp}>
             <motion.a
               href={Image.CV}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-primary rounded-full text-white shadow-black shadow-sm transition-colors duration-300 hover:bg-white hover:text-primary font-semibold hover:shadow-primary"
+              className="w-24 md:w-auto flex justify-center md:px-8 py-4 bg-primary rounded-full text-white shadow-black shadow-sm transition-colors duration-300 hover:bg-white hover:text-primary font-medium hover:shadow-primary"
             >
               Download CV
             </motion.a>

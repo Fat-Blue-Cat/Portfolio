@@ -63,7 +63,7 @@ const AboutSection = () => {
             variants={fadeInUp}
           >
             <div className="col-span-2 flex flex-col space-y-4 text-lg">
-              <div className="text-2xl font-medium  ">
+              <div className="text-2xl font-medium text-black h-16 md:h-auto ">
                 I{"'"}m Trung Vu Van &{" "}
                 <ReactTyped
                   strings={["Web Developer", "Freelancer", "UI/UX Designer"]}
@@ -97,19 +97,19 @@ const AboutSection = () => {
                 variants={fadeInUp}
               >
                 <p className="">
-                  <span className="font-medium text-lg">Birth day:</span>{" "}
+                  <span className="font-medium text-lg text-black">Birth day:</span>{" "}
                   <span className="text-lg tracking-wider text-gray-500">
                     01/07/2002
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg">Website: </span>
+                  <span className="font-medium text-lg text-black">Website: </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     portfolio-sigma-murex-94.vercel.app
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg">Phone: </span>
+                  <span className="font-medium text-lg text-black">Phone: </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     (+84)393217202
                   </span>
@@ -123,19 +123,19 @@ const AboutSection = () => {
                 variants={fadeInUp}
               >
                 <p className="">
-                  <span className="font-medium text-lg">Mail: </span>{" "}
+                  <span className="font-medium text-lg text-black">Mail: </span>{" "}
                   <span className="text-lg tracking-wider text-gray-500">
                     vuvantrung002@gmail.com
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg">Linkedin: </span>
+                  <span className="font-medium text-lg text-black">Linkedin: </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     linkedin.com/in/trung-vu-van
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg">Facebook: </span>
+                  <span className="font-medium text-lg text-black">Facebook: </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     facebook.com/trungvu.172002
                   </span>
@@ -182,7 +182,7 @@ const AboutSection = () => {
             ABILITIES
           </motion.h2>
           <motion.h1
-            className="text-2xl font-medium tracking-[0.1rem]"
+            className="text-2xl font-medium tracking-[0.1rem] text-black"
             variants={fadeInUp}
           >
             MY SKILLS
@@ -199,25 +199,25 @@ const AboutSection = () => {
               user-friendly websites with strong functionality.
             </p>
             <p>
-              <span className="font-medium"> Technologies I Work With:</span>{" "}
+              <span className="font-medium text-black"> Technologies I Work With:</span>{" "}
               <br />
-              <span className="font-medium">Front-end:</span>{" "}
+              <span className="font-medium text-black">Front-end:</span>{" "}
               <span className="text-gray-500">
                 HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap
               </span>
               <br />
-              <span className="font-medium">Back-end:</span>{" "}
+              <span className="font-medium  text-black">Back-end:</span>{" "}
               <span className="text-gray-500">
                 Java, Spring, Node.js, Express, MongoDB, MySQL, PostgreSQL, SQL
                 Server
               </span>
               <br />
-              <span className="font-medium">Others:</span>{" "}
+              <span className="font-medium text-black">Others:</span>{" "}
               <span className="text-gray-500">
                 Git, GitHub, Jira, Azure, Docker, Figma
               </span>
               <br />
-              <span className="font-medium">Languages:</span>{" "}
+              <span className="font-medium  text-black">Languages:</span>{" "}
               <span className="text-gray-500">English, Vietnamese</span>
             </p>
           </motion.div>
@@ -225,7 +225,7 @@ const AboutSection = () => {
           <motion.div className="col-span-2 md:col-span-1 text-lg font-medium">
             <div className="flex flex-col gap-2">
               {/* Front-End */}
-              <motion.div className="flex justify-between" variants={fadeInUp}>
+              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
                 <p>Front-End</p>
                 <p>50%</p>
               </motion.div>
@@ -244,7 +244,7 @@ const AboutSection = () => {
 
               {/* Back-End */}
 
-              <motion.div className="flex justify-between" variants={fadeInUp}>
+              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
                 <p>Back-End</p>
                 <p>60%</p>
               </motion.div>
@@ -261,7 +261,7 @@ const AboutSection = () => {
                 </motion.div>
               </div>
               {/* Languages */}
-              <motion.div className="flex justify-between" variants={fadeInUp}>
+              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
                 <p>Languages</p>
                 <p>50%</p>
               </motion.div>
@@ -279,7 +279,7 @@ const AboutSection = () => {
               </div>
 
               {/* Soft Skills */}
-              <motion.div className="flex justify-between" variants={fadeInUp}>
+              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
                 <p>Soft Skills</p>
                 <p>70%</p>
               </motion.div>

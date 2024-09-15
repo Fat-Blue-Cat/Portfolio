@@ -98,7 +98,7 @@ const ServiceItem = ({ icon, title, description, variants }) => {
       variants={variants} // Each item uses the same animation variants
     >
       <FontAwesomeIcon icon={icon} className="text-4xl text-gray-500 mb-2" />
-      <h2 className="font-medium text-2xl mb-2">{title}</h2>
+      <h2 className="font-medium text-2xl mb-2 text-black">{title}</h2>
       <p className="text-center text-normal tracking-wider text-gray-500">
         {description}
       </p>

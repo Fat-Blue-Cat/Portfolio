@@ -66,7 +66,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="bg-white px-8 py-12">
       <div className=" mb-8">
-        <h2 className="text-lg md:text-lg font-medium tracking-widest ">
+        <h2 className="text-lg md:text-lg font-medium tracking-widest text-black ">
           LOCATION
         </h2>
         <h1 className="text-2xl md:text-2xl text-gray-500 font-medium mt-2">
@@ -77,7 +77,7 @@ const ContactSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {/* Contact Information Section */}
         <div className="flex flex-col items-start md:items-start space-y-4">
-          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-4">
+          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-4 text-black">
             INFORMATION
           </h2>
           <p className="text-lg font-medium text-gray-500">
@@ -100,7 +100,7 @@ const ContactSection = () => {
 
         {/* Contact Form Section */}
         <div className="flex flex-col items-start pt-5 md:pt-0 md:items-center">
-          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-6">
+          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-6 text-black">
             GET IN TOUCH
           </h2>
           <form className="w-full max-w-2xl space-y-6" onSubmit={sendEmail}>

@@ -29,7 +29,7 @@ const PortfolioSection = () => {
           <h2 className="tracking-widest text-gray-500 text-lg font-medium">
             PORTFOLIO
           </h2>
-          <h1 className="text-2xl font-medium tracking-[0.1rem]">
+          <h1 className="text-2xl font-medium tracking-[0.1rem] text-black">
             CREATIVE WORKS
           </h1>
         </div>

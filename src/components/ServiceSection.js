@@ -34,10 +34,10 @@ const ServiceSection = () => {
     <section id="services">
       <div className="bg-white px-8 pt-12 pb-8">
         <div className="flex flex-col space-y-4">
-          <h2 className="tracking-widest text-lg text-gray-500 font-semibold">
+          <h2 className="tracking-widest text-lg text-gray-500 font-medium">
             WHAT I DO
           </h2>
-          <h1 className="text-2xl font-bold tracking-[0.1rem]">SERVICES</h1>
+          <h1 className="text-2xl font-medium tracking-[0.1rem]">SERVICES</h1>
         </div>
 
         <motion.div
@@ -98,8 +98,8 @@ const ServiceItem = ({ icon, title, description, variants }) => {
       variants={variants} // Each item uses the same animation variants
     >
       <FontAwesomeIcon icon={icon} className="text-4xl text-gray-500 mb-2" />
-      <h2 className="font-bold text-2xl mb-2">{title}</h2>
-      <p className="text-center text-lg font-semibold text-gray-500">
+      <h2 className="font-medium text-2xl mb-2">{title}</h2>
+      <p className="text-center text-normal tracking-wider text-gray-500">
         {description}
       </p>
     </motion.div>

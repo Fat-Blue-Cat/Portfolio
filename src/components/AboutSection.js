@@ -50,10 +50,10 @@ const AboutSection = () => {
           variants={staggerContainer}
         >
           <motion.div variants={fadeInUp}>
-            <h2 className="text-lg font-semibold text-black tracking-widest">
+            <h2 className="text-lg font-medium text-black tracking-widest mb-2">
               INFORMATION
             </h2>
-            <h1 className="text-2xl font-bold tracking-[0.1rem] text-gray-500">
+            <h1 className="text-2xl font-medium tracking-[0.1rem] text-gray-500">
               ABOUT ME
             </h1>
           </motion.div>
@@ -62,8 +62,8 @@ const AboutSection = () => {
             className="grid grid-cols-1 md:grid-cols-2 space-y-4 mt-4"
             variants={fadeInUp}
           >
-            <div className="col-span-2 flex flex-col space-y-4 font-medium text-lg">
-              <div className="text-2xl font-bold">
+            <div className="col-span-2 flex flex-col space-y-4 text-lg">
+              <div className="text-2xl font-medium  ">
                 I{"'"}m Trung Vu Van &{" "}
                 <ReactTyped
                   strings={["Web Developer", "Freelancer", "UI/UX Designer"]}
@@ -76,7 +76,7 @@ const AboutSection = () => {
                 />
               </div>
               <motion.p
-                className="text-gray-500 leading-loose"
+                className="text-gray-500 leading-loose "
                 variants={fadeInUp}
               >
                 I am passionate about crafting visually appealing and highly
@@ -97,17 +97,20 @@ const AboutSection = () => {
                 variants={fadeInUp}
               >
                 <p className="">
-                  <span className="font-bold">Birth day:</span>{" "}
-                  <span className="text-lg font-medium text-gray-500">
+                  <span className="font-medium text-lg">Birth day:</span>{" "}
+                  <span className="text-lg tracking-wider text-gray-500">
                     01/07/2002
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-bold">Website: </span>
+                  <span className="font-medium text-lg">Website: </span>
+                  <span className="text-lg tracking-wider text-gray-500">
+                  portfolio-sigma-murex-94.vercel.app
+                  </span>
                 </p>
                 <p className="">
-                  <span className="font-bold">Phone: </span>
-                  <span className="text-lg font-medium text-gray-500">
+                  <span className="font-medium text-lg">Phone: </span>
+                  <span className="text-lg tracking-wider text-gray-500">
                     (+84)393217202
                   </span>
                 </p>
@@ -120,20 +123,20 @@ const AboutSection = () => {
                 variants={fadeInUp}
               >
                 <p className="">
-                  <span className="font-bold">Mail: </span>{" "}
-                  <span className="text-lg font-medium text-gray-500">
+                  <span className="font-medium text-lg">Mail: </span>{" "}
+                  <span className="text-lg tracking-wider text-gray-500">
                     vuvantrung002@gmail.com
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-bold">Linkedin: </span>
-                  <span className="text-lg font-medium text-gray-500">
+                  <span className="font-medium text-lg">Linkedin: </span>
+                  <span className="text-lg tracking-wider text-gray-500">
                     linkedin.com/in/trung-vu-van
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-bold">Facebook: </span>
-                  <span className="text-lg font-medium text-gray-500">
+                  <span className="font-medium text-lg">Facebook: </span>
+                  <span className="text-lg tracking-wider text-gray-500">
                     facebook.com/trungvu.172002
                   </span>
                 </p>
@@ -166,7 +169,7 @@ const AboutSection = () => {
       <div className="bg-secondary px-8 pt-12 pb-8">
         <div className="flex flex-col space-y-4">
           <motion.h2
-            className="tracking-widest text-lg font-semibold text-gray-500"
+            className="tracking-widest text-lg font-medium text-gray-500"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -175,47 +178,47 @@ const AboutSection = () => {
             ABILITIES
           </motion.h2>
           <motion.h1
-            className="text-2xl font-bold tracking-[0.1rem]"
+            className="text-2xl font-medium tracking-[0.1rem]"
             variants={fadeInUp}
           >
             MY SKILLS
           </motion.h1>
         </div>
-        <motion.div className="grid grid-cols-2 mt-4 md:space-x-4 text-lg font-semibold">
+        <motion.div className="grid grid-cols-2 mt-4 md:space-x-4 text-lg tracking-wider">
           <motion.div
             className="col-span-2 md:col-span-1 pb-8 md:mb-0"
             variants={fadeInUp}
           >
-            <p className="text-gray-500">
+            <p className="text-gray-500 mb-4">
               I have extensive experience in both front-end and back-end
               development, specializing in building visually appealing,
               user-friendly websites with strong functionality.
             </p>
             <p>
-              <span className="font-bold"> Technologies I Work With:</span>{" "}
+              <span className="font-medium"> Technologies I Work With:</span>{" "}
               <br />
-              <span className="font-bold">Front-end:</span>{" "}
+              <span className="font-medium">Front-end:</span>{" "}
               <span className="text-gray-500">
                 HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap
               </span>
               <br />
-              <span className="font-bold">Back-end:</span>{" "}
+              <span className="font-medium">Back-end:</span>{" "}
               <span className="text-gray-500">
                 Java, Spring, Node.js, Express, MongoDB, MySQL, PostgreSQL, SQL
                 Server
               </span>
               <br />
-              <span className="font-bold">Others:</span>{" "}
+              <span className="font-medium">Others:</span>{" "}
               <span className="text-gray-500">
                 Git, GitHub, Jira, Azure, Docker, Figma
               </span>
               <br />
-              <span className="font-bold">Languages:</span>{" "}
+              <span className="font-medium">Languages:</span>{" "}
               <span className="text-gray-500">English, Vietnamese</span>
             </p>
           </motion.div>
 
-          <motion.div className="col-span-2 md:col-span-1 text-lg font-bold">
+          <motion.div className="col-span-2 md:col-span-1 text-lg font-medium">
             <div className="flex flex-col gap-2">
               {/* Front-End */}
               <motion.div className="flex justify-between" variants={fadeInUp}>

@@ -40,7 +40,8 @@ body {
 
   /* font-family: "Protest Guerrilla", sans-serif !important ; */
   font-family: "Oswald", sans-serif !important;
-  font-weight: 400;
+  font-weight: 300;
+  color: black;
   
 
   color: rgb(var(--foreground-rgb));

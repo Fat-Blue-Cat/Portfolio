@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 text-center bg-gray-800 h-[30vh] place-content-around">
       <div>
-        <div className="pt-4 md:py-4 text-white">
+        <div className="pt-4 md:py-4 text-white font-medium">
           <p>
             &copy; 2024 <strong>Trung</strong>. All rights reserved.
           </p>
@@ -20,7 +20,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col">
         <p className="text-3xl text-sencondary text-white font-bold">Trung</p>
-        <p className="text-2xl text-sencondary text-white font-semibold">
+        <p className="text-2xl text-sencondary text-white font-medium">
           Trung Vu Van
         </p>
       </div>

@@ -23,7 +23,7 @@
 
 import React, { useRef } from "react";
 import SideBar from "./SideBar";
-import ScrollCircle from "./ScrollCircle";
+// import ScrollCircle from "./ScrollCircle";
 import { motion } from "framer-motion";
 
 const Layout = (props) => {
@@ -52,7 +52,7 @@ const Layout = (props) => {
         <div className="bg-white">{props.children}</div>
       </div>
       {/* Pass scrollRef to ScrollCircle */}
-      <ScrollCircle scrollContainerRef={scrollRef} />
+      {/* <ScrollCircle scrollContainerRef={scrollRef} /> */}
     </div>
   );
 };

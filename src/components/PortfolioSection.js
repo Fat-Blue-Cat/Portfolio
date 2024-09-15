@@ -26,10 +26,10 @@ const PortfolioSection = () => {
     <section id="portfolio">
       <div className="bg-secondary px-8 pt-12 pb-16">
         <div className="flex flex-col space-y-4">
-          <h2 className="tracking-widest text-gray-500 text-lg font-semibold">
+          <h2 className="tracking-widest text-gray-500 text-lg font-medium">
             PORTFOLIO
           </h2>
-          <h1 className="text-2xl font-bold tracking-[0.1rem]">
+          <h1 className="text-2xl font-medium tracking-[0.1rem]">
             CREATIVE WORKS
           </h1>
         </div>

@@ -66,10 +66,10 @@ const ContactSection = () => {
   return (
     <section id="contact" className="bg-white px-8 py-12">
       <div className=" mb-8">
-        <h2 className="text-lg md:text-lg font-semibold tracking-widest ">
+        <h2 className="text-lg md:text-lg font-medium tracking-widest ">
           LOCATION
         </h2>
-        <h1 className="text-2xl md:text-2xl text-gray-500 font-bold mt-2">
+        <h1 className="text-2xl md:text-2xl text-gray-500 font-medium mt-2">
           CONTACT ME
         </h1>
       </div>
@@ -77,30 +77,30 @@ const ContactSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
         {/* Contact Information Section */}
         <div className="flex flex-col items-start md:items-start space-y-4">
-          <h2 className="text-xl md:text-xl tracking-widest font-bold mb-4">
+          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-4">
             INFORMATION
           </h2>
-          <p className="text-lg font-semibold text-gray-500">
-            <span className="font-semibold text-black">Address:</span> Kim
+          <p className="text-lg font-medium text-gray-500">
+            <span className="font-medium text-black">Address:</span> Kim
             Giang, Thanh Xuan District, Hanoi, Vietnam
           </p>
-          <p className="text-lg font-semibold text-gray-500">
-            <span className="font-semibold text-black">Phone:</span>{" "}
+          <p className="text-lg font-medium text-gray-500">
+            <span className="font-medium text-black">Phone:</span>{" "}
             (+84)393217202
           </p>
-          <p className="text-lg font-semibold text-gray-500">
-            <span className="font-semibold text-black">Email:</span>{" "}
+          <p className="text-lg font-medium text-gray-500">
+            <span className="font-medium text-black">Email:</span>{" "}
             vuvantrung002@gmail.com
           </p>
-          <p className="text-lg font-semibold text-gray-500">
-            <span className="font-semibold text-black">Facebook:</span>{" "}
+          <p className="text-lg font-medium text-gray-500">
+            <span className="font-medium text-black">Facebook:</span>{" "}
             https://www.facebook.com/trungvu.172002/
           </p>
         </div>
 
         {/* Contact Form Section */}
-        <div className="flex flex-col items-start md:items-center">
-          <h2 className="text-xl md:text-xl tracking-widest font-bold mb-6">
+        <div className="flex flex-col items-start pt-5 md:pt-0 md:items-center">
+          <h2 className="text-xl md:text-xl tracking-widest font-medium mb-6">
             GET IN TOUCH
           </h2>
           <form className="w-full max-w-2xl space-y-6" onSubmit={sendEmail}>

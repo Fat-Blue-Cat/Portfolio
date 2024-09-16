@@ -1,43 +1,77 @@
-// import React from "react";
 import { ReactTyped } from "react-typed";
 import React from "react";
 import { motion } from "framer-motion";
 import { Image } from "../data/Image";
+import {
+  SiNodedotjs,
+  SiReact,
+  SiCss3,
+  SiHtml5,
+  SiBootstrap,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiPostgresql,
+  SiSpring,
+  SiExpress,
+  SiTailwindcss,
+  SiMicrosoftsqlserver,
+  SiSpringsecurity,
+  SiTypescript,
+  SiNextdotjs,
+  SiThymeleaf,
+} from "react-icons/si";
+import { FaJava } from "react-icons/fa";
+
+const techStack = [
+  { icon: FaJava, name: "Java", color: "text-red-600" },
+  { icon: SiSpring, name: "Spring", color: "text-green-600" },
+  { icon: SiNodedotjs, name: "Node.js", color: "text-green-600" },
+  { icon: SiExpress, name: "Express.js", color: "text-gray-500" },
+  { icon: SiMongodb, name: "MongoDB", color: "text-green-600" },
+  { icon: SiMysql, name: "MySQL", color: "text-orange-500" },
+  { icon: SiPostgresql, name: "PostgreSQL", color: "text-blue-500" },
+  { icon: SiMicrosoftsqlserver, name: "SQL Server", color: "text-red-600" },
+  { icon: SiHtml5, name: "HTML", color: "text-orange-600" },
+  { icon: SiCss3, name: "CSS", color: "text-blue-600" },
+  { icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
+  { icon: SiReact, name: "React", color: "text-blue-400" },
+  { icon: SiTailwindcss, name: "Tailwind CSS", color: "text-blue-500" },
+  { icon: SiBootstrap, name: "Bootstrap", color: "text-purple-600" },
+  { icon: SiSpringsecurity, name: "Spring Security", color: "text-green-600" },
+  { icon: SiTypescript, name: "TypeScript", color: "text-blue-600" },
+  {icon: SiNextdotjs, name: "Next.js", color: "text-black"},
+  {icon: SiThymeleaf, name: "Thymeleaf", color: "text-green-600"}
+];
+
+const handleSmoothScroll = (e) => {
+  e.preventDefault();
+  const section = document.getElementById("contact");
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+};
+
 const AboutSection = () => {
-  // Variants for fade-in and slide-in animations
+  // Variants for staggered entrance animation (left to right)
+  const container = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Delay between animations of children (left to right)
+        when: "beforeChildren",
+      },
+    },
+  };
+
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.7, ease: "easeOut" },
+      transition: { duration: 0.5, ease: "easeOut" },
     },
-  };
-
-  const staggerContainer = {
-    hidden: { opacity: 1 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2, // Delay between animations of children
-      },
-    },
-  };
-
-  const skillBarVariants = {
-    hidden: { width: 0 },
-    visible: (width) => ({
-      width: width,
-      transition: { duration: 1.5, ease: "easeOut" },
-    }),
-  };
-
-  const handleSmoothScroll = (e) => {
-    e.preventDefault();
-    const section = document.getElementById("contact");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
   };
 
   return (
@@ -47,7 +81,7 @@ const AboutSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          variants={staggerContainer}
+          variants={container}
         >
           <motion.div variants={fadeInUp}>
             <h2 className="text-lg font-medium text-black tracking-widest mb-2">
@@ -63,31 +97,26 @@ const AboutSection = () => {
             variants={fadeInUp}
           >
             <div className="col-span-2 flex flex-col space-y-4 text-lg">
-              <div className="text-2xl font-medium text-black h-16 md:h-auto ">
+              <div className="text-2xl font-medium text-black h-16 md:h-auto">
                 I{"'"}m Trung Vu Van &{" "}
                 <ReactTyped
                   strings={["Web Developer", "Freelancer", "UI/UX Designer"]}
-                  typeSpeed={10} // Slightly slower typing speed
-                  backSpeed={15} // Consistent but slightly slower backspace speed
-                  backDelay={2000} // Adds delay before starting to delete
-                  cursorChar="|" // Adds a cursor
+                  typeSpeed={10}
+                  backSpeed={15}
+                  backDelay={2000}
+                  cursorChar="|"
                   loop
-                  smartBackspace // Avoids unnecessary retyping
+                  smartBackspace
                 />
               </div>
               <motion.p
-                className="text-gray-500 leading-loose "
+                className="text-gray-500 leading-loose"
                 variants={fadeInUp}
               >
-                I am passionate about crafting visually appealing and highly
-                functional websites that offer an excellent user experience.
-                With a strong focus on both front-end and back-end development,
-                I enjoy transforming ideas into reality through clean and
-                efficient code. <br />I have hands-on experience working with
-                modern web technologies such as React, Spring, Express, and
-                Tailwind CSS. My expertise spans the entire web development
-                process, from building intuitive interfaces to creating robust
-                back-end systems.
+                I'm a full-stack developer with expertise in creating visually
+                appealing and highly functional websites. My focus is on both
+                front-end and back-end development, working with technologies
+                like React, Spring, and Tailwind CSS.
               </motion.p>
             </div>
 
@@ -97,19 +126,25 @@ const AboutSection = () => {
                 variants={fadeInUp}
               >
                 <p className="">
-                  <span className="font-medium text-lg text-black">Birth day:</span>{" "}
+                  <span className="font-medium text-lg text-black">
+                    Birth day:
+                  </span>{" "}
                   <span className="text-lg tracking-wider text-gray-500">
                     01/07/2002
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg text-black">Website: </span>
+                  <span className="font-medium text-lg text-black">
+                    Website:{" "}
+                  </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     portfolio-sigma-murex-94.vercel.app
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg text-black">Phone: </span>
+                  <span className="font-medium text-lg text-black">
+                    Phone:{" "}
+                  </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     (+84)393217202
                   </span>
@@ -129,13 +164,17 @@ const AboutSection = () => {
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg text-black">Linkedin: </span>
+                  <span className="font-medium text-lg text-black">
+                    Linkedin:{" "}
+                  </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     linkedin.com/in/trung-vu-van
                   </span>
                 </p>
                 <p className="">
-                  <span className="font-medium text-lg text-black">Facebook: </span>
+                  <span className="font-medium text-lg text-black">
+                    Facebook:{" "}
+                  </span>
                   <span className="text-lg tracking-wider text-gray-500">
                     facebook.com/trungvu.172002
                   </span>
@@ -170,137 +209,48 @@ const AboutSection = () => {
       </div>
 
       {/* SKILL SECTION */}
-      <div className="bg-secondary px-8 pt-12 pb-8">
+      <section id="abilities" className="bg-white px-8 pt-12 pb-8">
         <div className="flex flex-col space-y-4">
-          <motion.h2
-            className="tracking-widest text-lg font-medium text-gray-500"
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={fadeInUp}
-          >
+          <h2 className="text-lg font-medium text-gray-500 tracking-widest">
             ABILITIES
-          </motion.h2>
-          <motion.h1
-            className="text-2xl font-medium tracking-[0.1rem] text-black"
-            variants={fadeInUp}
-          >
-            MY SKILLS
-          </motion.h1>
+          </h2>
+          <h1 className="text-2xl font-medium tracking-[0.1rem] text-black">
+            Tech Stack
+          </h1>
+          <span class="text-xl text-gray-500">
+          My technical skill set spans a broad spectrum of abilities, each crucial for thriving in the IT industry.
+          </span>
         </div>
-        <motion.div className="grid grid-cols-2 mt-4 md:space-x-4 text-lg tracking-wider">
-          <motion.div
-            className="col-span-2 md:col-span-1 pb-8 md:mb-0"
-            variants={fadeInUp}
-          >
-            <p className="text-gray-500 mb-4">
-              I have extensive experience in both front-end and back-end
-              development, specializing in building visually appealing,
-              user-friendly websites with strong functionality.
-            </p>
-            <p>
-              <span className="font-medium text-black"> Technologies I Work With:</span>{" "}
-              <br />
-              <span className="font-medium text-black">Front-end:</span>{" "}
-              <span className="text-gray-500">
-                HTML, CSS, JavaScript, React, Tailwind CSS, Bootstrap
+
+        <motion.div
+          className="flex justify-center flex-wrap gap-6 mt-8"
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
+          {techStack.map((tech, index) => (
+            <motion.div
+              key={index}
+              className="relative group flex justify-center items-center border-2 border-black rounded-lg hover:shadow-lg transition duration-300 ease-in-out aspect-w-1 aspect-square h-24"
+              variants={fadeInUp}
+              whileHover={{ scale: 1.1 }} // Hover zoom effect
+              whileTap={{ scale: 0.95 }} // Scale down on click
+            >
+              {/* Icon */}
+              <tech.icon className={`text-5xl ${tech.color}`} />
+
+              {/* Hover text at the bottom */}
+              <span className="absolute bottom-0 left-0 right-0 bg-black text-white opacity-0 group-hover:opacity-100 text-center py-1 transition-opacity duration-300">
+                {tech.name}
               </span>
-              <br />
-              <span className="font-medium  text-black">Back-end:</span>{" "}
-              <span className="text-gray-500">
-                Java, Spring, Node.js, Express, MongoDB, MySQL, PostgreSQL, SQL
-                Server
-              </span>
-              <br />
-              <span className="font-medium text-black">Others:</span>{" "}
-              <span className="text-gray-500">
-                Git, GitHub, Jira, Azure, Docker, Figma
-              </span>
-              <br />
-              <span className="font-medium  text-black">Languages:</span>{" "}
-              <span className="text-gray-500">English, Vietnamese</span>
-            </p>
-          </motion.div>
-
-          <motion.div className="col-span-2 md:col-span-1 text-lg font-medium">
-            <div className="flex flex-col gap-2">
-              {/* Front-End */}
-              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
-                <p>Front-End</p>
-                <p>50%</p>
-              </motion.div>
-              <div className="relative h-2 bg-gray-200 rounded-full">
-                <motion.div
-                  className="relative h-2 bg-primary rounded-full"
-                  custom="50%"
-                  variants={skillBarVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <div className="absolute h-2 bg-primary rounded-full"></div>
-                </motion.div>
-              </div>
-
-              {/* Back-End */}
-
-              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
-                <p>Back-End</p>
-                <p>60%</p>
-              </motion.div>
-              <div className="relative h-2 bg-gray-200 rounded-full">
-                <motion.div
-                  className="relative h-2 bg-primary rounded-full"
-                  custom="60%"
-                  variants={skillBarVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <div className="absolute h-2 bg-primary rounded-full"></div>
-                </motion.div>
-              </div>
-              {/* Languages */}
-              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
-                <p>Languages</p>
-                <p>50%</p>
-              </motion.div>
-              <div className="relative h-2 bg-gray-200 rounded-full">
-                <motion.div
-                  className="relative h-2 bg-primary rounded-full"
-                  custom="60%"
-                  variants={skillBarVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <div className="absolute h-2 bg-primary rounded-full"></div>
-                </motion.div>
-              </div>
-
-              {/* Soft Skills */}
-              <motion.div className="flex justify-between text-black" variants={fadeInUp}>
-                <p>Soft Skills</p>
-                <p>70%</p>
-              </motion.div>
-              <div className="relative h-2 bg-gray-200 rounded-full">
-                <motion.div
-                  className="relative h-2 bg-primary rounded-full"
-                  custom="70%"
-                  variants={skillBarVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <div className="absolute h-2 bg-primary rounded-full"></div>
-                </motion.div>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          ))}
         </motion.div>
-      </div>
+      </section>
     </section>
   );
 };
 
 export default AboutSection;
+

@@ -113,7 +113,7 @@ const AboutSection = () => {
                 className="text-gray-500 leading-loose"
                 variants={fadeInUp}
               >
-                I'm a full-stack developer with expertise in creating visually
+                I{"'"}m a full-stack developer with expertise in creating visually
                 appealing and highly functional websites. My focus is on both
                 front-end and back-end development, working with technologies
                 like React, Spring, and Tailwind CSS.

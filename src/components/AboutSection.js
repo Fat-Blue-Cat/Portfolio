@@ -116,7 +116,7 @@ const AboutSection = () => {
                 I{"'"}m a full-stack developer with expertise in creating visually
                 appealing and highly functional websites. My focus is on both
                 front-end and back-end development, working with technologies
-                like React, Spring, and Tailwind CSS.
+                like React, Spring Boot, and Tailwind CSS.
               </motion.p>
             </div>
 

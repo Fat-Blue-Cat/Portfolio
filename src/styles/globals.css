@@ -41,8 +41,8 @@ body {
   /* font-family: 'Poppins', sans-serif !important;   */
 
   /* font-family: "Protest Guerrilla", sans-serif !important ; */
-  /* font-family: "Oswald", sans-serif !important;
-  font-weight: 300; */
+  font-family: "Oswald", sans-serif !important;
+  font-weight: 300;
 
   font-family: "Montserrat", sans-serif !important;
   font-weight: 300;
@@ -127,11 +127,34 @@ body {
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
-  background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #f2f3f6, rgba(0, 0, 255, 0));
+  background: linear-gradient(-45deg, rgba(94, 10, 33, 0), #f2f3f6, rgba(0, 0, 255, 0));
   border-radius: 100%;
   transform: translateX(50%) rotateZ(45deg);
   animation: shining 3000ms ease-in-out infinite;
 }
+
+/* .star {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  height: 2px;
+  background: linear-gradient(-45deg, #f4f6f9, rgba(0, 0, 255, 0)); 
+  filter: drop-shadow(0 0 6px #f9fafb);
+  animation: tail 7000ms ease-in-out infinite, shooting 7000ms ease-in-out infinite;
+}
+
+.star::before, .star::after {
+  position: absolute;
+  content: '';
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  background: var(--before-after-color, linear-gradient(-45deg, rgba(94, 10, 33, 0), #f2f3f6, rgba(0, 0, 255, 0)));
+  border-radius: 100%;
+  transform: translateX(50%) rotateZ(45deg);
+  animation: shining 3000ms ease-in-out infinite;
+} */
+
 
 .star::after {
   transform: translateX(50%) rotateZ(-45deg);

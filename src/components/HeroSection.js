@@ -13,6 +13,30 @@ const HeroSection = () => {
     }
   };
 
+  // Function to generate a random RGB color
+// Function to generate a random color suitable for shooting stars
+function getRandomBrightColor() {
+  // Higher values for R, G, and B to ensure the color is bright and vibrant
+  const r = Math.floor(Math.random() * 156) + 100; // 100-255
+  const g = Math.floor(Math.random() * 156) + 100; // 100-255
+  const b = Math.floor(Math.random() * 156) + 100; // 100-255
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
+// // Apply random bright color to elements with class 'star'
+// const stars = document.querySelectorAll('.star');
+// stars.forEach(star => {
+//   const randomBrightColor = getRandomBrightColor();
+//   // Apply to the star's background (tail color)
+//   star.style.background = `linear-gradient(-45deg, ${randomBrightColor}, rgba(0, 0, 255, 0))`;
+  
+//   // Apply the random bright color to the ::before and ::after elements (shining part)
+//   const beforeAfterStyle = `linear-gradient(-45deg, rgba(94, 10, 33, 0), ${randomBrightColor}, rgba(0, 0, 255, 0))`;
+//   star.style.setProperty('--before-after-color', beforeAfterStyle);
+// });
+
+
+
   return (
     <section id="home" className="overflow-hidden relative">
       <div className="relative left-0">
@@ -21,7 +45,9 @@ const HeroSection = () => {
       <section
         className={`h-screen bg-cover bg-center flex items-center justify-center flex-col relative`}
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url(${Image.background2})`,
+          // backgroundImage: `linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.2)), url(${Image.backgroundv2})`,
+          // transform: "rotate(90deg)",
+          backgroundImage:`url(${Image.backgroundv2})`
         }}
       >
         {/* Lớp overlay để làm mờ background image */}

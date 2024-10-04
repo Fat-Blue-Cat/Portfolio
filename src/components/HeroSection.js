@@ -15,13 +15,13 @@ const HeroSection = () => {
 
   // Function to generate a random RGB color
 // Function to generate a random color suitable for shooting stars
-function getRandomBrightColor() {
-  // Higher values for R, G, and B to ensure the color is bright and vibrant
-  const r = Math.floor(Math.random() * 156) + 100; // 100-255
-  const g = Math.floor(Math.random() * 156) + 100; // 100-255
-  const b = Math.floor(Math.random() * 156) + 100; // 100-255
-  return `rgb(${r}, ${g}, ${b})`;
-}
+// function getRandomBrightColor() {
+//   // Higher values for R, G, and B to ensure the color is bright and vibrant
+//   const r = Math.floor(Math.random() * 156) + 100; // 100-255
+//   const g = Math.floor(Math.random() * 156) + 100; // 100-255
+//   const b = Math.floor(Math.random() * 156) + 100; // 100-255
+//   return `rgb(${r}, ${g}, ${b})`;
+// }
 
 // // Apply random bright color to elements with class 'star'
 // const stars = document.querySelectorAll('.star');
